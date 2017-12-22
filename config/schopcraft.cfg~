@@ -1,0 +1,26 @@
+# Configuration file
+
+general {
+    # Upon death, you become a ghost, freely roaming the world. Disable this setting to allow for normal respawning.
+    B:enableGhost=true
+
+    # Toggle the sanity mechanic.
+    B:enableSanity=true
+
+    # Toggle the temperature mechanic.
+    B:enableTemperature=true
+
+    # Toggle the thirst mechanic.
+    B:enableThirst=true
+
+    # Toggle the wetness mechanic.
+    B:enableWetness=true
+
+    # If true, the temperature will be shown in Celsius. If false, it will be shown in Fahrenheit
+    B:showCelsius=false
+
+    # By default, the durability bar of the canteen (and HydroPouch) will show its durability. Set this to true to have the bar show the number of sips left instead, like before.
+    B:showSipsInDurabilityBar=false
+}
+
+

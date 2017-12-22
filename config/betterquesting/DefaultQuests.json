@@ -1,0 +1,1424 @@
+{
+  "questSettings": {
+    "betterquesting": {
+      "livesdef": 3,
+      "home_anchor_y": 0.0,
+      "livesmax": 10,
+      "home_anchor_x": 0.5,
+      "editmode": true,
+      "hardcore": false,
+      "home_image": "betterquesting:textures/gui/default_title.png",
+      "home_offset_x": -128,
+      "home_offset_y": 0
+    }
+  },
+  "questDatabase": [
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:log",
+            "Count": 8,
+            "OreDict": "logWood",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Punch a tree",
+          "desc": "To survive your first night, you\u0027re going to need some wood. You will need it for tools and to build a fire"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:log",
+              "Count": 8,
+              "OreDict": "logWood",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "minecraft:sapling",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "ic2:sapling",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:sapling",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "bq_standard:loot_chest",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:choice",
+          "index": 0
+        },
+        {
+          "rewards": [
+            {
+              "id": "minecraft:torch",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:log",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 1
+        }
+      ],
+      "preRequisites": [],
+      "questID": 0
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:campfire",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Fire!",
+          "desc": "Tough as nails makes surviving, well tough as nails. Craft a fire to keep you warm and provide light for your campsite. You\u0027ll get some food for your trouble, and a sleeping bag"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:campfire",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "minecraft:beef",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:porkchop",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:chicken",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:choice",
+          "index": 0
+        },
+        {
+          "rewards": [
+            {
+              "id": "openblocks:sleeping_bag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        0
+      ],
+      "questID": 1
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:wooden_pickaxe",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Rudimentary Tooling",
+          "desc": "Tools are paramount to any survival situation, if you want to do more than sleep under the stars you should craft some wooden tools"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:wooden_shovel",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:wooden_pickaxe",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:wooden_axe",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {}
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:cobblestone",
+              "Count": 3,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        0
+      ],
+      "questID": 2
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "NORMAL",
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:clay",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "What\u0027s a refractory?",
+          "desc": "Molten metal is hot, very hot! If you want to move beyond stoneage tools, you\u0027re going to need a material that can handle the heat. Check in riverbeds, near lakes and underground."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:clay_ball",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:sand",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        0
+      ],
+      "questID": 3
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "storagedrawers:basicdrawers",
+            "Count": 1,
+            "OreDict": "drawerBasic",
+            "Damage": 0,
+            "tag": {
+              "material:8": "oak"
+            }
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Storage",
+          "desc": "You quickly realise that your pockets aren\u0027t a longterm storage solution and qucikly draft up some storage drawers."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "storagedrawers:basicdrawers",
+              "Count": 4,
+              "OreDict": "drawerBasic",
+              "Damage": 0,
+              "tag": {
+                "material:8": "oak"
+              }
+            },
+            {
+              "id": "storagedrawers:basicdrawers",
+              "Count": 4,
+              "OreDict": "drawerBasic",
+              "Damage": 1,
+              "tag": {
+                "material:8": "oak"
+              }
+            },
+            {
+              "id": "storagedrawers:basicdrawers",
+              "Count": 4,
+              "OreDict": "drawerBasic",
+              "Damage": 2,
+              "tag": {
+                "material:8": "oak"
+              }
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "amount": 5,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 0
+        },
+        {
+          "rewards": [
+            {
+              "id": "storagedrawers:upgrade_storage",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "bq_standard:loot_chest",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        0
+      ],
+      "questID": 4
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:stone_pickaxe",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Time for an upgrade",
+          "desc": "Wood is kinda bad at cleaving stone, lets find something tougher to make your tools out of"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:stone_pickaxe",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:stone_shovel",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:stone_axe",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {}
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "ic2:ingot",
+              "Count": 3,
+              "OreDict": "ingotBronze",
+              "Damage": 1
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        2
+      ],
+      "questID": 5
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "ic2:bronze_pickaxe",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Ooh Shiny",
+          "desc": "You should be drowning in copper and tin by now. You recall something from your schooling about an alloy called bronze, a much more sutible material than the makeshift tools you had been using. A foundry or kiln to alloy metals might be a good investment."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "ic2:bronze_pickaxe",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "ic2:bronze_shovel",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "ic2:ingot",
+              "Count": 6,
+              "OreDict": "ingotBronze",
+              "Damage": 1
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:obsidian",
+              "Count": 10,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        5,
+        7
+      ],
+      "questID": 6
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "immersiveengineering:stone_decoration",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 10
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Metallurgy 101",
+          "desc": "By this point, you are beginning to get a handle on things. Iron is scarce and hard to process without technology, maybe an alloy of copper and tin is your answer?"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:stone_decoration",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 10
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:coal",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "command": "/say §4You feel as though you are being watched",
+          "hideCommand": true,
+          "viaPlayer": false,
+          "rewardID": "bq_standard:command",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        3,
+        15
+      ],
+      "questID": 7
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "immersiveengineering:material",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 6
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Coke? What\u0027s Coke?",
+          "desc": "Alright, we\u0027re getting serious now. You remember that coke is a purified form of coal used in metallurgy (cough steel production cough). You don\u0027t have the resources for a crude blast furnace yet but you can certainly start purify coal (and wood) so you\u0027re ready!"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:stone_decoration",
+              "Count": 27,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "immersiveengineering:stone_decoration",
+              "Count": 27,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:coal",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        3
+      ],
+      "questID": 8
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "immersiveengineering:material",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 6
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Oh Coke!",
+          "desc": "Just collect a bunch"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:material",
+              "Count": 16,
+              "OreDict": "fuelCoke",
+              "Damage": 6
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        8
+      ],
+      "questID": 9
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "forge:bucketfilled",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0,
+            "tag": {
+              "FluidName:8": "creosote",
+              "Amount:3": 1000
+            }
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Coke Byproducts",
+          "desc": "When you drive off all the impurities in coke you get creosote oil! Don\u0027t throw it out though, no industrial byproduct is truly a waste. It can be used as furnace fuel and to treat wooden planks."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "forge:bucketfilled",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "FluidName:8": "creosote",
+                "Amount:3": 1000
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "immersiveengineering:shader_bag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "rarity:8": "UNCOMMON"
+              }
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        8
+      ],
+      "questID": 10
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:coal",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 1
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Charcoal Production",
+          "desc": "The coke oven can also be used to drive oils and resins out of wood, giving you charcoal! It\u0027s renewable!"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:coal",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 1
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:sapling",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "minecraft:dye",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 15
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        9
+      ],
+      "questID": 11
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:skull",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 1
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Trip to the nether",
+          "desc": "You notice some obsidian in your pack, something in the back of your mind calls to you, compelling you to construct a doorway with it and light it ablaze. The compilsion disturbs you but you obey... At least you can get some new materials while you\u0027re there"
+        }
+      },
+      "tasks": [
+        {
+          "target": "minecraft:zombie_pigman",
+          "required": 16,
+          "subtypes": true,
+          "ignoreNBT": true,
+          "targetNBT": {},
+          "taskID": "bq_standard:hunt",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:netherrack",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:quartz",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:glowstone_dust",
+              "Count": 64,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 1
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:blaze_powder",
+              "Count": 9,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "command": "/say §4You feel as though someone... or something... has taken notice of you. If this is a good thing, time will tell...",
+          "hideCommand": true,
+          "viaPlayer": false,
+          "rewardID": "bq_standard:command",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        6,
+        9
+      ],
+      "questID": 12
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "NORMAL",
+          "simultaneous": false,
+          "icon": {
+            "id": "foundry:componentblock",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 3
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Foundries",
+          "desc": "You may have noticed that shoving iron ore into a furnace well, didn\u0027t work... Until you have a power system, you can\u0027t get the furnace hot enough to refine iron. You\u0027re going to need a basic foundry! You just need copper, tin and some refractory material... You did make your engineer\u0027s manual right? "
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "foundry:component",
+              "Count": 32,
+              "OreDict": "",
+              "Damage": 1
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "ic2:plate",
+              "Count": 8,
+              "OreDict": "plateBronze",
+              "Damage": 0
+            },
+            {
+              "id": "ic2:plate",
+              "Count": 2,
+              "OreDict": "plateCopper",
+              "Damage": 1
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 1
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "foundry:machine",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "foundry:burnerheater",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "foundry:refractoryspout",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 2
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "foundry:castingtable",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        7,
+        3
+      ],
+      "questID": 13
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "ic2:ingot",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 5
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Dawn of technology",
+          "desc": "You feel empowered by your recent excursion, although that uneasy feeling has lingered...\n\nPaying no mind to it, it\u0027s time to build your crude blast furnace and finally get some technology going!"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:stone_decoration",
+              "Count": 27,
+              "OreDict": "",
+              "Damage": 1
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:iron_ingot",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        12
+      ],
+      "questID": 14
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "immersiveengineering:tool",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 3
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Reference Material",
+          "desc": "As an engineer, you\u0027re going to need to make yourself a textbook... "
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:tool",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 3
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "immersiveengineering:tool",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "ic2:forge_hammer",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        0
+      ],
+      "questID": 15
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "ic2:ingot",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 5
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Technology!",
+          "desc": "It\u0027s about time you got working on some tech, your\u0027e going to need a lot of steel..."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "ic2:ingot",
+              "Count": 8,
+              "OreDict": "ingotSteel",
+              "Damage": 5
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "ic2:ingot",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 5
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [],
+      "questID": 16
+    }
+  ],
+  "questLines": [
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "Awakening",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "Your eyes open to a barren world, your priority now is to survive."
+        }
+      },
+      "quests": [
+        {
+          "size": 24,
+          "x": -12,
+          "y": 6,
+          "id": 0
+        },
+        {
+          "size": 24,
+          "x": 36,
+          "y": 6,
+          "id": 1
+        },
+        {
+          "size": 24,
+          "x": -108,
+          "y": 6,
+          "id": 2
+        },
+        {
+          "size": 24,
+          "x": -12,
+          "y": 48,
+          "id": 3
+        },
+        {
+          "size": 24,
+          "x": 36,
+          "y": 48,
+          "id": 4
+        },
+        {
+          "size": 24,
+          "x": -108,
+          "y": 96,
+          "id": 5
+        },
+        {
+          "size": 24,
+          "x": -108,
+          "y": 144,
+          "id": 6
+        },
+        {
+          "size": 24,
+          "x": -60,
+          "y": 96,
+          "id": 7
+        },
+        {
+          "size": 24,
+          "x": 54,
+          "y": 126,
+          "id": 8
+        },
+        {
+          "size": 24,
+          "x": 6,
+          "y": 180,
+          "id": 9
+        },
+        {
+          "size": 24,
+          "x": 90,
+          "y": 186,
+          "id": 10
+        },
+        {
+          "size": 24,
+          "x": 42,
+          "y": 228,
+          "id": 11
+        },
+        {
+          "size": 24,
+          "x": -42,
+          "y": 228,
+          "id": 12
+        },
+        {
+          "size": 24,
+          "x": -18,
+          "y": 138,
+          "id": 13
+        },
+        {
+          "size": 24,
+          "x": 6,
+          "y": 348,
+          "id": 14
+        },
+        {
+          "size": 24,
+          "x": -60,
+          "y": 48,
+          "id": 15
+        }
+      ],
+      "lineID": 0,
+      "order": 0
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "A Better Way?",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "Now that you have access to steel, your options are open. Can power help you escape this world?"
+        }
+      },
+      "quests": [
+        {
+          "size": 24,
+          "x": -12,
+          "y": 0,
+          "id": 16
+        }
+      ],
+      "lineID": 1,
+      "order": 1
+    }
+  ],
+  "format": "1.0.0"
+}
