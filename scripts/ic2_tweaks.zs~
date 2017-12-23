@@ -1,5 +1,4 @@
 recipes.remove(<ic2:te:50>);
-recipes.remove(<ic2:plate:3>);
 
 //Adding advanced alloy to ore dictionary
 val trAdvAlloy=<ore:plateAdvancedAlloy>;

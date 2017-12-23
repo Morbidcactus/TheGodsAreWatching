@@ -1,0 +1,4 @@
+val rubberSap=<ore:materialResin>;
+//val rubberWood=<ore:woodRubber>;
+
+CarbPlate.add(<ic2:crafting:15>);

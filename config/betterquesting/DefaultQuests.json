@@ -132,13 +132,16 @@
           "autoclaim": false,
           "ismain": false,
           "name": "Fire!",
-          "desc": "Tough as nails makes surviving, well tough as nails. Craft a fire to keep you warm and provide light for your campsite. You\u0027ll get some food for your trouble, and a sleeping bag"
+          "desc": "Tough as nails makes surviving, well tough as nails. Craft a fire to keep you warm and provide light for your campsite. You\u0027ll get some food for your trouble, and a sleeping bag\n\nBe careful about indoor heatsources, it can get a little toasty."
         }
       },
       "tasks": [
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
               "id": "toughasnails:campfire",
@@ -147,7 +150,7 @@
               "Damage": 0
             }
           ],
-          "taskID": "bq_standard:crafting",
+          "taskID": "bq_standard:retrieval",
           "index": 0
         }
       ],
@@ -180,6 +183,12 @@
           "rewards": [
             {
               "id": "openblocks:sleeping_bag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tanspit:spit",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
@@ -223,15 +232,18 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
-              "id": "minecraft:wooden_shovel",
+              "id": "minecraft:wooden_pickaxe",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
             },
             {
-              "id": "minecraft:wooden_pickaxe",
+              "id": "minecraft:wooden_shovel",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
@@ -244,7 +256,7 @@
               "tag": {}
             }
           ],
-          "taskID": "bq_standard:crafting",
+          "taskID": "bq_standard:retrieval",
           "index": 0
         }
       ],
@@ -363,6 +375,9 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
               "id": "storagedrawers:basicdrawers",
@@ -385,14 +400,14 @@
             {
               "id": "storagedrawers:basicdrawers",
               "Count": 4,
-              "OreDict": "drawerBasic",
+              "OreDict": "",
               "Damage": 2,
               "tag": {
                 "material:8": "oak"
               }
             }
           ],
-          "taskID": "bq_standard:crafting",
+          "taskID": "bq_standard:retrieval",
           "index": 0
         }
       ],
@@ -456,15 +471,18 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
-              "id": "minecraft:stone_pickaxe",
+              "id": "minecraft:stone_shovel",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
             },
             {
-              "id": "minecraft:stone_shovel",
+              "id": "minecraft:stone_pickaxe",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
@@ -477,7 +495,7 @@
               "tag": {}
             }
           ],
-          "taskID": "bq_standard:crafting",
+          "taskID": "bq_standard:retrieval",
           "index": 0
         }
       ],
@@ -529,27 +547,24 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
-              "id": "ic2:bronze_pickaxe",
+              "id": "techreborn:bronzepickaxe",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
             },
             {
-              "id": "ic2:bronze_shovel",
+              "id": "techreborn:bronzespade",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
-            },
-            {
-              "id": "ic2:ingot",
-              "Count": 6,
-              "OreDict": "ingotBronze",
-              "Damage": 1
             }
           ],
-          "taskID": "bq_standard:crafting",
+          "taskID": "bq_standard:retrieval",
           "index": 0
         }
       ],
@@ -561,6 +576,15 @@
               "Count": 10,
               "OreDict": "",
               "Damage": 0
+            },
+            {
+              "id": "minecraft:potion",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "Potion:8": "toughasnails:long_heat_resistance_type"
+              }
             }
           ],
           "rewardID": "bq_standard:item",
@@ -602,6 +626,9 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
               "id": "immersiveengineering:stone_decoration",
@@ -610,7 +637,7 @@
               "Damage": 10
             }
           ],
-          "taskID": "bq_standard:crafting",
+          "taskID": "bq_standard:retrieval",
           "index": 0
         }
       ],
@@ -670,6 +697,9 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
               "id": "immersiveengineering:stone_decoration",
@@ -678,19 +708,13 @@
               "Damage": 0
             }
           ],
-          "taskID": "bq_standard:crafting",
+          "taskID": "bq_standard:retrieval",
           "index": 0
         }
       ],
       "rewards": [
         {
           "rewards": [
-            {
-              "id": "immersiveengineering:stone_decoration",
-              "Count": 27,
-              "OreDict": "",
-              "Damage": 0
-            },
             {
               "id": "minecraft:coal",
               "Count": 64,
@@ -922,19 +946,10 @@
           "autoclaim": false,
           "ismain": true,
           "name": "Trip to the nether",
-          "desc": "You notice some obsidian in your pack, something in the back of your mind calls to you, compelling you to construct a doorway with it and light it ablaze. The compilsion disturbs you but you obey... At least you can get some new materials while you\u0027re there"
+          "desc": "You notice some obsidian in your pack, something in the back of your mind calls to you, compelling you to construct a doorway with it and light it ablaze.\n§kWill you obery?§4\n\n\n You feel disturbed... \n\n§rYou know from your Engineer\u0027s manual that you\u0027ll need resources that can only be found in the nether, might as well follow along..."
         }
       },
       "tasks": [
-        {
-          "target": "minecraft:zombie_pigman",
-          "required": 16,
-          "subtypes": true,
-          "ignoreNBT": true,
-          "targetNBT": {},
-          "taskID": "bq_standard:hunt",
-          "index": 0
-        },
         {
           "partialMatch": true,
           "ignoreNBT": false,
@@ -951,7 +966,7 @@
             {
               "id": "minecraft:quartz",
               "Count": 32,
-              "OreDict": "",
+              "OreDict": "gemQuartz",
               "Damage": 0
             },
             {
@@ -987,8 +1002,7 @@
         }
       ],
       "preRequisites": [
-        6,
-        9
+        6
       ],
       "questID": 12
     },
@@ -1022,49 +1036,18 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
-              "id": "foundry:component",
-              "Count": 32,
-              "OreDict": "",
-              "Damage": 1
-            }
-          ],
-          "taskID": "bq_standard:crafting",
-          "index": 0
-        },
-        {
-          "partialMatch": true,
-          "ignoreNBT": false,
-          "requiredItems": [
-            {
-              "id": "ic2:plate",
-              "Count": 8,
-              "OreDict": "plateBronze",
-              "Damage": 0
-            },
-            {
-              "id": "ic2:plate",
-              "Count": 2,
-              "OreDict": "plateCopper",
-              "Damage": 1
-            }
-          ],
-          "taskID": "bq_standard:crafting",
-          "index": 1
-        },
-        {
-          "partialMatch": true,
-          "ignoreNBT": false,
-          "requiredItems": [
-            {
-              "id": "foundry:machine",
+              "id": "foundry:burnerheater",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
             },
             {
-              "id": "foundry:burnerheater",
+              "id": "foundry:machine",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
@@ -1076,8 +1059,8 @@
               "Damage": 0
             }
           ],
-          "taskID": "bq_standard:crafting",
-          "index": 2
+          "taskID": "bq_standard:retrieval",
+          "index": 0
         }
       ],
       "rewards": [
@@ -1129,6 +1112,9 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
               "id": "immersiveengineering:stone_decoration",
@@ -1137,7 +1123,7 @@
               "Damage": 1
             }
           ],
-          "taskID": "bq_standard:crafting",
+          "taskID": "bq_standard:retrieval",
           "index": 0
         }
       ],
@@ -1149,6 +1135,12 @@
               "Count": 16,
               "OreDict": "",
               "Damage": 0
+            },
+            {
+              "id": "toughasnails:lifeblood_crystal",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
             }
           ],
           "rewardID": "bq_standard:item",
@@ -1156,7 +1148,8 @@
         }
       ],
       "preRequisites": [
-        12
+        12,
+        9
       ],
       "questID": 14
     },
@@ -1189,6 +1182,9 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
           "requiredItems": [
             {
               "id": "immersiveengineering:tool",
@@ -1197,7 +1193,7 @@
               "Damage": 3
             }
           ],
-          "taskID": "bq_standard:crafting",
+          "taskID": "bq_standard:retrieval",
           "index": 0
         }
       ],
@@ -1286,6 +1282,466 @@
       ],
       "preRequisites": [],
       "questID": 16
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:water_bottle",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Thirst",
+          "desc": "You find yourself getting thirsty. Remembering the rules of 3s, you realise you should find a source of water.\n\n\nGrab yourself some bottles and fill up!"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": true,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:water_bottle",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "toughasnails:water_bottle",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 1
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        1
+      ],
+      "questID": 17
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:canteen",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Canteens",
+          "desc": "It\u0027s great you have water now but those bottles are taking up lots of room in your pack...\n\nIf you had some leather, maybe you could fashion yourself a canteen."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:canteen",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "toughasnails:jelled_slime_boots",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        17
+      ],
+      "questID": 18
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:charcoal_filter",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Mmmm mud",
+          "desc": "Well now, you\u0027re not dying of dehydration. That water you\u0027re drinking though is kinda nasty...\n \nIf you had some paper and some charcoal, maybe you could filter it..."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:charcoal_filter",
+              "Count": 3,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "harvestcraft:applejuiceitem",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        17
+      ],
+      "questID": 19
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:rain_collector",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "A better water source?",
+          "desc": "Knowing that rainwater is pretty dang clean, you wonder if there may be some way to capture it for your use."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:rain_collector",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "harvestcraft:blueberryseeditem",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "harvestcraft:strawberryseeditem",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "harvestcraft:blackberryseeditem",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        19
+      ],
+      "questID": 20
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "bibliocraft:cookiejar",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Hunger",
+          "desc": "If you\u0027re going to survive for any extended period, you\u0027ll want to do more than eat porkchops slapped into a coal fired furnace.\n\nCraft some kitchen tools, they won\u0027t go to waste."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "harvestcraft:juiceritem",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "harvestcraft:cuttingboarditem",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "harvestcraft:bakewareitem",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "harvestcraft:potitem",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:bone",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "harvestcraft:pearitem",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [],
+      "questID": 21
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "harvestcraft:pearjuiceitem",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Juicing!",
+          "desc": "Juice is refreshing! Why don\u0027t you give your new pam\u0027s tools a spin?\n\nMight want to use the pear you were given"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "harvestcraft:pearjuiceitem",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        17,
+        21
+      ],
+      "questID": 22
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "cannibalism:villagerflesh",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "It\u0027s about survival, right?",
+          "desc": "You\u0027re hungry, extremely hungry...\n\nYou might even take a bite out of a villager or fellow player..."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "cannibalism:stoneknife",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "cannibalism:villagerflesh",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        1
+      ],
+      "questID": 23
     }
   ],
   "questLines": [
@@ -1307,7 +1763,7 @@
         },
         {
           "size": 24,
-          "x": 36,
+          "x": 144,
           "y": 6,
           "id": 1
         },
@@ -1385,8 +1841,8 @@
         },
         {
           "size": 24,
-          "x": 6,
-          "y": 348,
+          "x": -12,
+          "y": 318,
           "id": 14
         },
         {
@@ -1394,6 +1850,48 @@
           "x": -60,
           "y": 48,
           "id": 15
+        },
+        {
+          "size": 24,
+          "x": 144,
+          "y": 48,
+          "id": 17
+        },
+        {
+          "size": 24,
+          "x": 96,
+          "y": 96,
+          "id": 18
+        },
+        {
+          "size": 24,
+          "x": 144,
+          "y": 96,
+          "id": 19
+        },
+        {
+          "size": 24,
+          "x": 144,
+          "y": 150,
+          "id": 20
+        },
+        {
+          "size": 24,
+          "x": 192,
+          "y": 6,
+          "id": 21
+        },
+        {
+          "size": 24,
+          "x": 192,
+          "y": 96,
+          "id": 22
+        },
+        {
+          "size": 24,
+          "x": 96,
+          "y": 48,
+          "id": 23
         }
       ],
       "lineID": 0,
