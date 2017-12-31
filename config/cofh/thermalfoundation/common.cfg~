@@ -116,101 +116,101 @@ Equipment {
     Tools {
 
         Copper {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
         Tin {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
         Silver {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
         Lead {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
         Aluminum {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
         Nickel {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
         Platinum {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
         Steel {
@@ -228,31 +228,31 @@ Equipment {
         }
 
         Electrum {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
         Invar {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
         Bronze {
@@ -270,17 +270,17 @@ Equipment {
         }
 
         Constantan {
-            B:Axe=true
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Hoe=true
-            B:Pickaxe=true
-            B:Shears=true
-            B:Shield=true
-            B:Shovel=true
-            B:Sickle=true
-            B:Sword=true
+            B:Axe=false
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Hoe=false
+            B:Pickaxe=false
+            B:Shears=false
+            B:Shield=false
+            B:Shovel=false
+            B:Sickle=false
+            B:Sword=false
         }
 
     }
@@ -303,29 +303,29 @@ Equipment {
         }
 
         Iron {
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Shield=true
-            B:Sickle=true
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Shield=false
+            B:Sickle=false
         }
 
         Diamond {
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Shears=true
-            B:Shield=true
-            B:Sickle=true
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Shears=false
+            B:Shield=false
+            B:Sickle=false
         }
 
         Gold {
-            B:Bow=true
-            B:FishingRod=true
-            B:Hammer=true
-            B:Shears=true
-            B:Shield=true
-            B:Sickle=true
+            B:Bow=false
+            B:FishingRod=false
+            B:Hammer=false
+            B:Shears=false
+            B:Shield=false
+            B:Sickle=false
         }
 
     }
@@ -532,8 +532,7 @@ Version {
 
 
 World {
-    # If TRUE, Thermal Foundation will create default world generation files if it cannot find existing ones. Only disable if you know what you are doing. [default: true]
-    B:GenerateDefaultFiles=true
+    B:GenerateDefaultFiles=false
 }
 
 

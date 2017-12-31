@@ -626,9 +626,20 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
-          "consume": false,
-          "groupDetect": false,
-          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:sandstone",
+              "Count": 8,
+              "OreDict": "sandstone",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
           "requiredItems": [
             {
               "id": "immersiveengineering:stone_decoration",
@@ -637,8 +648,8 @@
               "Damage": 10
             }
           ],
-          "taskID": "bq_standard:retrieval",
-          "index": 0
+          "taskID": "bq_standard:crafting",
+          "index": 1
         }
       ],
       "rewards": [
@@ -697,9 +708,43 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:sandstone",
+              "Count": 9,
+              "OreDict": "sandstone",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
           "consume": false,
           "groupDetect": false,
           "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:brick",
+              "Count": 36,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:clay_ball",
+              "Count": 36,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 1
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
           "requiredItems": [
             {
               "id": "immersiveengineering:stone_decoration",
@@ -708,8 +753,8 @@
               "Damage": 0
             }
           ],
-          "taskID": "bq_standard:retrieval",
-          "index": 0
+          "taskID": "bq_standard:crafting",
+          "index": 2
         }
       ],
       "rewards": [
@@ -753,7 +798,7 @@
           "autoclaim": false,
           "ismain": true,
           "name": "Oh Coke!",
-          "desc": "Just collect a bunch"
+          "desc": "Now that you have some metalurgical grade fuel, it\u0027s time to start working on refining iron into steel"
         }
       },
       "tasks": [
@@ -775,7 +820,20 @@
           "index": 0
         }
       ],
-      "rewards": [],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:coal",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
       "preRequisites": [
         8
       ],
@@ -1036,18 +1094,61 @@
         {
           "partialMatch": true,
           "ignoreNBT": false,
-          "consume": false,
-          "groupDetect": false,
-          "autoConsume": false,
           "requiredItems": [
             {
-              "id": "foundry:burnerheater",
+              "id": "foundry:component",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "ic2:plate",
+              "Count": 2,
+              "OreDict": "plateCopper",
+              "Damage": 1
+            },
+            {
+              "id": "ic2:plate",
+              "Count": 8,
+              "OreDict": "plateBronze",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "foundry:componentblock",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "foundry:bronzecauldron",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
             },
             {
-              "id": "foundry:machine",
+              "id": "minecraft:furnace",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 1
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "foundry:burnerheater",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
@@ -1057,10 +1158,16 @@
               "Count": 1,
               "OreDict": "",
               "Damage": 0
+            },
+            {
+              "id": "foundry:machine",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
             }
           ],
-          "taskID": "bq_standard:retrieval",
-          "index": 0
+          "taskID": "bq_standard:crafting",
+          "index": 2
         }
       ],
       "rewards": [
@@ -1117,14 +1224,34 @@
           "autoConsume": false,
           "requiredItems": [
             {
+              "id": "minecraft:netherbrick",
+              "Count": 36,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:brick",
+              "Count": 36,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
               "id": "immersiveengineering:stone_decoration",
               "Count": 27,
               "OreDict": "",
               "Damage": 1
             }
           ],
-          "taskID": "bq_standard:retrieval",
-          "index": 0
+          "taskID": "bq_standard:crafting",
+          "index": 1
         }
       ],
       "rewards": [
@@ -1742,6 +1869,1066 @@
         1
       ],
       "questID": 23
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "ic2:plate",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 3
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Industrial Revolution",
+          "desc": "You\u0027ve come a long way, survival has been hard but you\u0027ve been successful thus far.\n\nIt\u0027s time to start thinking about putting your engineering experience to good use. Your foundry has been useful refining your ores but it\u0027s reaching the limits of what it can do with bronze. If you could craft a plate table, maybe you could use it to cast some iron plates? These plates are the foundation of any low voltage machinery, so get casting."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "ic2:plate",
+              "Count": 16,
+              "OreDict": "plateIron",
+              "Damage": 3
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "harvestcraft:footlongitem",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        16
+      ],
+      "questID": 24
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "immersiveengineering:treated_wood",
+            "Count": 1,
+            "OreDict": "plankTreatedWood",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Treated Wood",
+          "desc": "Creosote has uses beyond filling up tanks. If you soak wooden planks with it, they become fireproof, rot resistant and waterproof. Basically, it\u0027s like wood but better.\n\nThis treated wood is also used as a basis for many engineering constructs.\n\n\n\n\n§m§k§rIt makes a good creosote sink"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:treated_wood",
+              "Count": 32,
+              "OreDict": "plankTreatedWood",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 1
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "immersiveengineering:blueprint",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "blueprint:8": "components"
+              }
+            },
+            {
+              "id": "immersiveengineering:blueprint",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "blueprint:8": "molds"
+              }
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        16
+      ],
+      "questID": 25
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "abyssalcraft:necronomicon",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0,
+            "tag": {
+              "PotEnergy:5": 0.0
+            }
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Necronomicon Ex Mortis",
+          "desc": "Ever since you returned from the nether, you\u0027ve been mumbling to yourself and seeing shadows out of the corner of your eye. You think nothing of it, anyone in your situation would feel the same way you reason.\n\nStill... you can\u0027t shake the feeling that another book might be beneficial to your survival on this world. A particularly macabre tome bound in zombie flesh keeps coming to mind.\n\nUnsure where this knowledge is coming from, you oblige this compulsion..."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:rotten_flesh",
+              "Count": 6,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:iron_ingot",
+              "Count": 2,
+              "OreDict": "ingotIron",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:book",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "abyssalcraft:necronomicon",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "PotEnergy:5": 0.0
+              }
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 1
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:enchanted_book",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "StoredEnchantments:9": {
+                  "10": {
+                    "lvl:2": 1,
+                    "id:2": 17
+                  }
+                }
+              }
+            },
+            {
+              "id": "bq_standard:loot_chest",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "command": "/say VAR_NAME Claimed a reward",
+          "hideCommand": false,
+          "viaPlayer": false,
+          "rewardID": "bq_standard:command",
+          "index": 1
+        },
+        {
+          "command": "/weather thunder",
+          "hideCommand": true,
+          "viaPlayer": false,
+          "rewardID": "bq_standard:command",
+          "index": 2
+        },
+        {
+          "command": "/say VAR_NAME has crafted the Necronomicon, a sickness washes over them",
+          "hideCommand": true,
+          "viaPlayer": false,
+          "rewardID": "bq_standard:command",
+          "index": 3
+        },
+        {
+          "command": "/effect VAR_NAME minecraft:nausea 20 3",
+          "hideCommand": true,
+          "viaPlayer": false,
+          "rewardID": "bq_standard:command",
+          "index": 4
+        }
+      ],
+      "preRequisites": [],
+      "questID": 26
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "ic2:te",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 3
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Power Generation",
+          "desc": "Burning material releases a lot of energy you think to yourself, if you had some way of converting it to power you could start working with machines."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "ic2:resource",
+              "Count": 1,
+              "OreDict": "machineBlockBasic",
+              "Damage": 12
+            },
+            {
+              "id": "ic2:re_battery",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 26,
+              "tag": {}
+            },
+            {
+              "id": "minecraft:furnace",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "ic2:te",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 3
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 1
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:coal",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 1
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        24
+      ],
+      "questID": 27
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "ic2:misc_resource",
+            "Count": 16,
+            "OreDict": "materialResin",
+            "Damage": 4
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Sticky Resin",
+          "desc": "Transmitting electricity through uninsulated cables is unwise. Latex rubber is a natural and readily availble source of insulation, now if only you could find some rubber trees...\n\nA tree tap may be useful to extract the resin from the trees. Collect some saplings as well, a tree grove will help you."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": true,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "ic2:misc_resource",
+              "Count": 16,
+              "OreDict": "materialResin",
+              "Damage": 4
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "ic2:crafting",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        24
+      ],
+      "questID": 28
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "abyssalcraft:shoggothbiomass",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "A preverse task",
+          "desc": "The book whispers to you while you try to sleep. It speaks of profain rituals that will allow you to tap into the power of the Outer Gods. Reading deeper, you find mention of monstrous creatures known as shoggoths who corrupt the very land with their touch, turning it to unknown stone and creating effigies of the gods.  \n\nYou feel you should seek out such a creature and attempt to harvest some of this stone and possibly one of these effigies.+ "
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": true,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "abyssalcraft:stone",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 7
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "abyssalcraft:statue",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 4
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        26
+      ],
+      "questID": 29
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:nether_star",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Evil craft placeholder",
+          "desc": "No Description"
+        }
+      },
+      "tasks": [],
+      "rewards": [],
+      "preRequisites": [],
+      "questID": 30
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:nether_star",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "New Quest",
+          "desc": "No Description"
+        }
+      },
+      "tasks": [],
+      "rewards": [],
+      "preRequisites": [
+        30
+      ],
+      "questID": 31
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "industrialwires:ic2_wire_coil",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 1,
+            "tag": {
+              "wireLength:3": 1024
+            }
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Cable Crafting",
+          "desc": "Industrial wires are made using uninsulated cables in a crafting grid, make a spool of copper and tin using the provided cables"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "industrialwires:ic2_wire_coil",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1,
+              "tag": {
+                "wireLength:3": 16
+              }
+            },
+            {
+              "id": "industrialwires:ic2_wire_coil",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "wireLength:3": 16
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "ic2:te",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 72,
+              "tag": {}
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        33
+      ],
+      "questID": 32
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "industrialwires:ic2_connector",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 1
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Industrial Wiring",
+          "desc": "Now that you have a rubber source, you can craft some transmission wires."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": false,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "industrialwires:ic2_connector",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "industrialwires:ic2_connector",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "industrialwires:ic2_connector",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "industrialwires:ic2_connector",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "ic2:cable",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 4,
+              "tag": {
+                "type:1": 4,
+                "insulation:1": 0
+              }
+            },
+            {
+              "id": "ic2:cable",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "type:1": 0,
+                "insulation:1": 0
+              }
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        28
+      ],
+      "questID": 33
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "ic2:te",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 45
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "More rubber",
+          "desc": "Rubber has lots of uses, it can be used to craft conveyor belts for example. You feel that while baking raw latex in a furnace has served you thusfar, a machine may be more efficient at processing raw latex into usuable material."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "ic2:te",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 45
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "harvestcraft:sushiitem",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        28,
+        27
+      ],
+      "questID": 34
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "ic2:te",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 55
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Metal Working",
+          "desc": "Metals can be formed into many different useful forms, if you had a metal forming machine you could use it to craft plates, wires and casings without the need of low-tech tools like hammers and cutters. It\u0027s slow, but you don\u0027t have to do anything but set and forget!"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "ic2:crafting",
+              "Count": 3,
+              "OreDict": "",
+              "Damage": 5
+            },
+            {
+              "id": "ic2:tool_box",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "ic2:crafting",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "ic2:resource",
+              "Count": 1,
+              "OreDict": "machineBlockBasic",
+              "Damage": 12
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "ic2:te",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 55
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 1
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "bq_standard:loot_chest",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:nether_wart",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        27
+      ],
+      "questID": 35
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "immersiveengineering:wooden_device1",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Passive Power",
+          "desc": "You know first hand the power of flowing water. Now that you have acces to steel and treated wood, you can craft several water wheels! There is a maximum of 3 per kinetic dynamo so keep that in mind"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:material",
+              "Count": 12,
+              "OreDict": "",
+              "Damage": 10
+            },
+            {
+              "id": "immersiveengineering:metal_decoration0",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        },
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:wooden_device1",
+              "Count": 3,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "immersiveengineering:metal_device1",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 1
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:hardened_clay",
+              "Count": 16,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        25
+      ],
+      "questID": 36
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "immersiveengineering:wirecoil",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Power Transmission",
+          "desc": "You\u0027re going to need a way of transmitting power from your generators to your consumers. Luckily, insulated relays and connectors will allow you to do this! "
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:connector",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "immersiveengineering:connector",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 1
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "immersiveengineering:wirecoil",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        25
+      ],
+      "questID": 37
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:nether_star",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "TBD",
+          "desc": "No Description"
+        }
+      },
+      "tasks": [],
+      "rewards": [],
+      "preRequisites": [
+        36,
+        37
+      ],
+      "questID": 38
     }
   ],
   "questLines": [
@@ -1900,7 +3087,7 @@
     {
       "properties": {
         "betterquesting": {
-          "name": "A Better Way?",
+          "name": "Novice Technomancer",
           "bg_image": "",
           "bg_size": 256,
           "desc": "Now that you have access to steel, your options are open. Can power help you escape this world?"
@@ -1909,9 +3096,99 @@
       "quests": [
         {
           "size": 24,
+          "x": -132,
+          "y": 192,
+          "id": 32
+        },
+        {
+          "size": 24,
+          "x": -132,
+          "y": 144,
+          "id": 33
+        },
+        {
+          "size": 24,
+          "x": -84,
+          "y": 144,
+          "id": 34
+        },
+        {
+          "size": 24,
+          "x": -36,
+          "y": 144,
+          "id": 35
+        },
+        {
+          "size": 24,
+          "x": 12,
+          "y": 96,
+          "id": 36
+        },
+        {
+          "size": 24,
+          "x": 60,
+          "y": 96,
+          "id": 37
+        },
+        {
+          "size": 24,
+          "x": 36,
+          "y": 144,
+          "id": 38
+        },
+        {
+          "size": 24,
           "x": -12,
           "y": 0,
           "id": 16
+        },
+        {
+          "size": 24,
+          "x": -60,
+          "y": 48,
+          "id": 24
+        },
+        {
+          "size": 24,
+          "x": 36,
+          "y": 48,
+          "id": 25
+        },
+        {
+          "size": 24,
+          "x": 168,
+          "y": 0,
+          "id": 26
+        },
+        {
+          "size": 24,
+          "x": -36,
+          "y": 96,
+          "id": 27
+        },
+        {
+          "size": 24,
+          "x": -84,
+          "y": 96,
+          "id": 28
+        },
+        {
+          "size": 24,
+          "x": 168,
+          "y": 48,
+          "id": 29
+        },
+        {
+          "size": 24,
+          "x": -234,
+          "y": 0,
+          "id": 30
+        },
+        {
+          "size": 24,
+          "x": -234,
+          "y": 48,
+          "id": 31
         }
       ],
       "lineID": 1,
