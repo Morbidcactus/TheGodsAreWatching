@@ -1,0 +1,68 @@
+# Configuration file
+
+compatibility {
+    # Should this mod change the vanilla ore gen?
+    B:changeVanillaOreSpawn=true
+
+    # Allows custom generation in modded dimensions. Only supports dimensions with Stone as the main block (like the overworld)
+    B:customDimensions=true
+
+    # Should emeralds spawn anywhere? Set false to make emeralds only spawn in Extreme Hills biomes
+    B:easyEmeralds=true
+
+    # Support for Forestry ores
+    B:supportForestry=true
+
+    # Support for Immersive Engineering
+    B:supportImmersiveEngineering=true
+
+    # Support for IC2 ores
+    B:supportIndustrialCraft=true
+
+    # Support for Mekanism
+    B:supportMekanism=true
+
+    # Support for Tech Reborn
+    B:supportTechReborn=true
+
+    # Support for Thermal Foundation
+    B:supportThermalFoundation=true
+
+    # Support for Tinker's Construct
+    B:supportTinkersConstruct=true
+
+    # Support for Waila
+    B:supportWaila=true
+
+    # Should the mod not override Nether Quartz?
+    B:useVanillaNetherQuartz=false
+}
+
+
+debug {
+    # Enables more printouts to the chat. WARNING: Will spam the log file. Good for bug reports. Not recommended for regular play.
+    B:debugMode=false
+}
+
+
+general {
+    # Range at which Endermen will aggro, in blocks.
+    I:aggroRangeEndermen=16
+
+    # Range at which Zombie Pigmen will aggro, in blocks.
+    I:aggroRangePigmen=16
+
+    # Endermen will attack players who mine end ores. Set to false to disable
+    B:endermenAggro=true
+
+    # True will disable spawn of the CheshireRose flower.
+    B:gfFlowerDisable=false
+
+    # Makes new ores be smelted straight to their ingot form, instead of turning into vanilla ores first.
+    B:smeltToIngots=true
+
+    # Zombie Pigmen will attack players who mine nether ores. Set to false to disable
+    B:zombiePigmenAggro=true
+}
+
+
